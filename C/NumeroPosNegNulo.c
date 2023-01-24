@@ -1,6 +1,5 @@
 #include <stdio.h>
-int main(int argc, char const *argv[])
-{
+int main(int argc, char const *argv[]) {
   int numero;
   printf("Dime un número: ");
   scanf("%d", &numero);
