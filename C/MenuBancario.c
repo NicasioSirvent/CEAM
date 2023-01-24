@@ -22,9 +22,10 @@ int main(int argc, char const *argv[]) {
       saldo -= 100;
       printf("Reintegro de 100 Euros, tienes %d Euros\n", saldo);
     } else if (opcion == 4) {
-      puts("Hasta Pronto!\n");
+      puts("Hasta Pronto!");
       break;
-    } else { puts("Opcion no Valida!\n");
+    } else { 
+      puts("Opcion no Valida!");
     }
     puts("-------------------");
   }
