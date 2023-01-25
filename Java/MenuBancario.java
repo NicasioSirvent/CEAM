@@ -5,13 +5,14 @@ public class MenuBancario {
 
     Scanner scanner = new Scanner(System.in);
     int numero = 0;
+    int cantidad = 0;
     int saldo = 1000;
 
     while (true) {
-      System.out.println("Esto es un Menu Bancario: ");
+      System.out.println("Menú: ");
       System.out.println("1 - Extracto de cuenta: ");
-      System.out.println("2 - Ingresa 100 en cuenta: ");
-      System.out.println("3 - Reintegro 100 de cuenta: ");
+      System.out.println("2 - Ingreso en cuenta: ");
+      System.out.println("3 - Reintegro de cuenta: ");
       System.out.println("4 - Salir ");
       System.out.print("Elije Opcion: ");
       numero = scanner.nextInt();
@@ -20,11 +21,15 @@ public class MenuBancario {
       if (numero == 1) {
         System.out.println("Tienes " + saldo + " Euros de Saldo.");
       } else if (numero == 2) {
-        saldo += 100;
-        System.out.println("Ingresando 100 en Cuenta, tienes " + saldo + " Euros");
+        System.out.println("¿Que Cantidad quieres Ingresar?");
+        cantidad = scanner.nextInt();
+        saldo += cantidad;
+        System.out.println("Ingresando " + cantidad + " en Cuenta, tienes " + saldo + " Euros");
       } else if (numero == 3) {
-        saldo -= 100;
-        System.out.println("Reintegro de 100 Euros, tienes " + saldo + " Euros");
+        System.out.println("¿Que Cantidad quieres Reintegrar?");
+        cantidad = scanner.nextInt();
+        saldo -= cantidad;
+        System.out.println("Reintegro de " + cantidad + " Euros, tienes " + saldo + " Euros");
       } else if (numero == 4) {
         System.out.println("Hasta Pronto!");
         break;
