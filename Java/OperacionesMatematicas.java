@@ -9,17 +9,19 @@ public class OperacionesMatematicas {
     int operacion = 0;
 
     System.out.println("-----------------");
+    System.out.println("Operandos: ");
     System.out.print("Primer Numero: ");
     numero1 = scanner.nextFloat();
     System.out.print("Segundo Numero: ");
     numero2 = scanner.nextFloat();
     System.out.println("-----------------");
 
-    System.out.println("Operacion: ");
+    System.out.println("Operador: ");
     System.out.println("1 - Suma 1+2: ");
     System.out.println("2 - Resta 1-2: ");
     System.out.println("3 - Multiplicación 1*2: ");
     System.out.println("4 - División 1/2: ");
+    System.out.println("5 - Potencia 1^2: ");
     System.out.print("Elije Opcion: ");
     operacion = scanner.nextInt();
 
@@ -32,6 +34,8 @@ public class OperacionesMatematicas {
     } else if (operacion == 4) {
       System.out.println(
           "Operacion División: " + numero1 + " / " + numero2 + " = " + String.format("%.2f", numero1 / numero2));
+    } else if (operacion == 5) {
+      System.out.println("Operacion Potencias: " + numero1 + " ^ " + numero2 + " = " + Math.pow(numero1, numero2));
     } else {
       System.out.println("Operacion no Valida");
     }
