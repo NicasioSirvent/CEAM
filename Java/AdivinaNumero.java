@@ -16,14 +16,14 @@ public class AdivinaNumero {
       System.out.print("Intento " + i + " : ");
       guess = scanner.nextInt();
       if (guess == numero) {
-        System.out.println("-> Has Acertado! :) ");
+        System.out.println("## ¡Has Acertado! :) ##");
         break;
       } else {
         if (i == 5) {
-          System.out.println("-> Has Perdido, buuuuu! :( ");
+          System.out.println("## Has Perdido, buuuuu! :( ##");
           break;
         } else {
-          System.out.println("-> Nein! Intentalo otra vez...");
+          System.out.println("-> Nie! Intentalo otra vez...");
         }
       }
     }
