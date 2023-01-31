@@ -1,8 +1,12 @@
 #include <stdio.h>
+#include <stdlib.h>
+
 int main(int argc, char const *argv[]) {
   int saldo = 1000;
   int cantidad = 0;
   int opcion = 0;
+
+  system("clear");
 
   while ( 1 ) {
     puts("Esto es un Menu Bancario: ");
@@ -35,5 +39,6 @@ int main(int argc, char const *argv[]) {
     }
     puts("-------------------");
   }
+
   return 0;
 }
