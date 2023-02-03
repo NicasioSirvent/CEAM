@@ -19,7 +19,11 @@ int main(int argc, char const *argv[])
     printf("Elije Opcion: ");
     while((opcion = getchar()) == '\n');
     //scanf("%c", &opcion);
-
+    /*
+    do {
+      opcion = getchar();
+    } while (opcion < 'a' || opcion > 'd');
+    */
     puts("-------------------");
     switch (opcion) {
     case ('a'):
