@@ -1,6 +1,6 @@
 #include <stdio.h>
 int main(int argc, char const *argv[]) {
-  float notas[5], media; 
+  float notas[5];
   float suma = 0;
   int i;
 
