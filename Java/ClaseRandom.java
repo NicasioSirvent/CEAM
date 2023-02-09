@@ -7,7 +7,7 @@ public class ClaseRandom {
     System.out.println("Un decimal 0-10 random:" + random.nextFloat(10.0f));
     String palo[] = {"Espadas","Oros","Bastos","Copas"};
     System.out.println("Palo de Baraja al Azar: " + palo[random.nextInt(3)]);
-    String carta[] = {"1","2","3","4","5","6","7","8","9","Sota","Caballo","Rey"};
+    String carta[] = {"As","2","3","4","5","6","7","8","9","Sota","Caballo","Rey"};
     System.out.println("Una carta al Azar: El/La " 
               + carta[random.nextInt(11)] + " de " + palo[random.nextInt(3)] );
     System.out.println();
