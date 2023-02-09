@@ -4,7 +4,7 @@ public class ClaseRandom {
   public static void main(String[] args) {
     Random random = new Random();
     System.out.println("Un entero 0-10 random: " + random.nextInt(11));
-    System.out.println("Un float 0-10 random:" + random.nextFloat(10.0f));
+    System.out.println("Un float 0-10 random: " + random.nextFloat(10.0f));
     String palo[] = {"Espadas","Oros","Bastos","Copas"};
     System.out.println("Palo de Baraja al Azar: " + palo[random.nextInt(4)]);
     String carta[] = {"As","2","3","4","5","6","7","8","9","Sota","Caballo","Rey"};
