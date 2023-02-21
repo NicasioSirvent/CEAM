@@ -8,9 +8,8 @@ public class TecladoAFichero {
     PrintWriter salida = null;
     try {
       salida = new PrintWriter("datos.txt");
-      String cadena;
       System.out.println("Intro texto");
-      cadena = scanner.nextLine();
+      String cadena = scanner.nextLine();
       while(!cadena.equalsIgnoreCase("FIN")) {
         salida.println(cadena);
         cadena = scanner.nextLine();
