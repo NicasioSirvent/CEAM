@@ -9,6 +9,7 @@
 
 *.json
 *.swp
+*.class
+*.log
+*.txt
 C/prueba.c
-datos.txt
-trabajo-final-bloque-1-java.txt

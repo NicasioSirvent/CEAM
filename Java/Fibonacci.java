@@ -9,7 +9,7 @@ public class Fibonacci {
     int y = 0;
     int temp;
     char sep;
-    for (int i = 0; i <= 10; i++) {
+    for (int i = 0; i <= 20; i++) {
       temp = x + y;
       x = y;
       y = temp;
