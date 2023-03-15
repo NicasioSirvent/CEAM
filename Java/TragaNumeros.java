@@ -7,7 +7,6 @@ public class TragaNumeros {
     int[] numerosImpares = new int[100];
     int indicePar = 0;
     int indiceImpar = 0;
-    int sumaTotal = 0;
     int sumaPar = 0;
     int sumaImpar = 0;
     int numeroInput;
@@ -22,30 +21,28 @@ public class TragaNumeros {
         numerosImpares[indiceImpar++] = numeroInput;
         sumaImpar += numeroInput;
       }
-      sumaTotal += numeroInput;
       System.out.print("Numero: ");
       numeroInput = scanner.nextInt();
     }
 
     //Lista Pares
-    System.out.println("Lista de Pares");
-    System.out.println("--------------");
+    System.out.print("Lista de Pares:");
     for (int i : numerosPares) {
       if (i == 0) break;
-      System.out.println(i); 
+      System.out.print(" " + i); 
     }
+    System.out.println();
     
     //Lista Impares
-    System.out.println("Lista de Impares");
-    System.out.println("----------------");
+    System.out.print("Lista de Impares:");
     for (int i : numerosImpares) {
       if (i == 0) break;
-      System.out.println(i); 
+      System.out.print(" " + i); 
     }
 
-    System.out.println("Suma Pares: " + sumaPar);
+    System.out.println("\nSuma Pares: " + sumaPar);
     System.out.println("Suma Impares: " + sumaImpar);
-    System.out.println("Suma Total: " + sumaTotal);
+    System.out.println("Suma Total: " + (sumaPar + sumaImpar) );
 
     scanner.close();
   }
