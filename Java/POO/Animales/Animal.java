@@ -4,43 +4,50 @@ public class Animal {
   private String especie;
   private String nombre;
   private int edad;
-  Persona persona;
+  Persona titular;
 
 
   public Animal() {
-    this.especie = "Sin Identificar";
-    this.nombre = "Anonimo";
-    this.edad = 0;
+    especie = "Sin Identificar";
+    nombre = "Anonimo";
+    edad = 0;
   }
 
-  public Animal(String nombre, String especie, int edad) {
-    this.especie = especie;
-    this.nombre = nombre;
-    this.edad = edad;
+  public Animal(String nom, String esp, int ed) {
+    especie = esp;
+    nombre = nom;
+    edad = ed;
   }
 
   public int getEdad() {
-    return this.edad;
+    return edad;
   }
 
-  public void setEdad(int nuevaEdad) {
-    this.edad = nuevaEdad;
+  public void setEdad(int e) {
+    this.edad = e;
   }
   
   public String getEspecie() {
-    return this.especie;
+    return especie;
   }
 
-  public void setEspecie(String nuevaEspecie) {
-    this.especie = nuevaEspecie;
+  public void setEspecie(String e) {
+    especie = e;
   }
-
 
   public String getNombre() {
-    return this.nombre;
+    return nombre;
   }
 
-  public void setNombre(String nombre) {
-    this.nombre = nombre;
+  public void setNombre(String n) {
+    nombre = n;
+  }
+
+  public void setTitular(Persona p) {
+    titular = p;
+  }
+
+  public Persona getTitular() {
+    return titular;
   }
 }

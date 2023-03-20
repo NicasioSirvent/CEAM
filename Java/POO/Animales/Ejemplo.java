@@ -8,10 +8,10 @@ public class Ejemplo {
     animal2.setNombre("Melissa");
     animal1.setEdad(3);
     animal1.setEspecie("Perro");
-    animal1.persona = new Persona("Federico");
+    animal1.titular = new Persona("Federico");
       
     System.out.println("El nombre es: " + animal1.getNombre());
-    System.out.println(" su dueño es " + animal1.persona.getNombre() + " y tiene " + animal1.getEdad() + " años");
+    System.out.println(" su dueño es " + animal1.titular.getNombre() + " y tiene " + animal1.getEdad() + " años");
     System.out.println("El 2º animal es un@ " + animal2.getEspecie());
   }
 }
